@@ -1,9 +1,10 @@
 #!/bin/bash
-#continue when error
+# Continue when error
 #set +e
-#break when error
+# Break when error
 set -e
 
+# Specify your linter variable here
 GometalinterVariable=(
 #    "vetshadow"
 #    "vet"
@@ -40,9 +41,9 @@ GometalinterVariable=(
     "varcheck"
 )
 
-
+# Specify your directory relative path here
 Directory=(
-    "src/flight"
+    "src/helloworld"
 )
 
 arrayGometalinterVariable=${#GometalinterVariable[@]}
